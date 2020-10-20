@@ -1,0 +1,329 @@
+.loginForm {
+  text-decoration: none;
+  width: 100%;
+  padding: 50px;
+  /* background: black; */
+  background: #fff;
+  display: flex;
+  /* margin-top: 20%; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 60px auto;
+  position: relative;
+  /* box-shadow: 1.3rem 1.3rem 1.3rem 1.3rem whitesmoke; */
+  max-height: 1900px;
+}
+
+.loginForm span {
+  width: 100%;
+  /* margin-top: 30%; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.loginForm span input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 15px 0 10px 60px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+.loginForm span p {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: gray;
+  z-index: -1;
+  user-select: none;
+  transition: 0.25s ease-in-out;
+}
+.loginForm span input:focus ~ p {
+  transform: translateY(-200%);
+  /* color: rgb(255,0,98); */
+  font-size: 1rem;
+}
+.loginForm span input:valid ~ p {
+  transform: translateY(-200%);
+  font-size: 1rem;
+}
+.loginForm span label .fas {
+  color: #7d7d7d;
+  font-size: 1.5rem;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: -2%;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.loginForm span label .fas:hover {
+  color: #6d6d6d;
+}
+.loginForm span input:focus ~ label .fas {
+  color: rgb(255, 0, 98);
+}
+span label::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: rgb(255, 0, 98);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+.loginForm span input:focus ~ label::after {
+  width: 100%;
+}
+
+.submit-btn10 {
+  /* height: 40%; */
+}
+.buttondiv {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  background-color: var(--primary);
+  text-align: center;
+  outline: none;
+}
+.buttondiv a {
+  text-decoration: none;
+  list-style: none;
+}
+.form_parent {
+  position: relative;
+}
+
+@media screen and (max-width: 414px) {
+  .form_parent .btn10 {
+    position: relative;
+    /* right: 2rem; */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .form_parent .btn10 {
+    position: relative;
+    transform: translate(-20px, 0px);
+    /* width: 30rem; */
+  }
+}
+.form_parent .btn101 {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  display: inline-block;
+  /* height: 4rem; */
+  width: 212px;
+  margin-left: 130px;
+  /* margin-left: 10px; */
+  font-size: 140%;
+  color: #fff;
+  background-color: #94a6c0;
+}
+.form_parent .btn10 {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  display: inline-block;
+  /* height: 4rem; */
+  width: 177px;
+  margin-left: -20px;
+  /* margin-left: 10px; */
+  font-size: 140%;
+  color: #fff;
+  background-color: #94a6c0;
+}
+.formparent {
+  /* margin-left: 30px; */
+  /* float: right; */
+  /* display: block; */
+  /* margin: auto; */
+  /* justify-content: center; */
+  display: block;
+  /* margin-left: 70px; */
+  /* margin-right: auto; */
+}
+.multiple-file {
+  text-align: center;
+}
+.csv-btn {
+  width: 150px;
+  /* margin-bottom: 20px; */
+  position: relative;
+  bottom: 5px;
+  height: 50px;
+  background: #bb2205;
+}
+@media all and (max-width: 600px) {
+  .form_parent .btn101 {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    display: inline-block;
+    /* height: 4rem; */
+    width: 212px;
+    margin-left: 190px;
+    position: relative;
+    bottom: 47px;
+    /* margin-top: -70px; */
+    font-size: 140%;
+    color: #fff;
+    background-color: #94a6c0;
+  }
+  .csv-btn {
+    width: 150px;
+    /* margin-bottom: 20px; */
+    background: #bb2205;
+    position: relative;
+    top: 5px;
+    left: 80px;
+    height: 50px;
+  }
+  .form-head {
+    margin-right: 100rem;
+    position: relative;
+    right: 27rem;
+  }
+  .formparent {
+    margin-right: 20rem;
+  }
+  .multiple-file {
+    text-align: center;
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    /* margin-right: 100rem; */
+    /* position: relative;
+    right: 27rem; */
+  }
+}
+
+.form-head {
+  margin-left: 500px;
+}
+.btn1 {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: #0066f5;
+  text-align: center;
+}
+
+.btn1:hover {
+  padding: 6px 18px;
+  transition: all 0.3s ease-out;
+  color: red;
+  border-radius: 4px;
+  border: 2px solid #0066f5;
+  transition: background-color, all 1.3s ease-out;
+  background-color: transparent;
+}
+.btn4 {
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 2.5rem;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #0066f5;
+  background-color: white;
+  text-align: center;
+  border: 1px solid #0066f5;
+}
+
+.btn4:hover {
+  padding: 6px 18px;
+  transition: all 0.3s ease-out;
+  color: red;
+  border-radius: 4px;
+  border: 2px solid #0066f5;
+  transition: background-color, all 1.3s ease-out;
+  background-color: transparent;
+}
+.loginForm .link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: gray;
+}
+
+.gmail_facebook {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.loginForm .link:hover {
+  color: rgb(255, 0, 98);
+}
+
+.loginForm img {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  align-content: center;
+}
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.withtheflowing {
+  text-align: center;
+}
+
+.terms {
+  text-justify: inter-word;
+  max-width: 300px;
+  font-size: 12px;
+}
+
+.getstarted {
+  color: blue;
+  cursor: pointer;
+}
+
+.first {
+  color: red;
+}
+.register-member {
+  text-align: center;
+  margin-top: 7%;
+}

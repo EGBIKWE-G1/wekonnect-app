@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.adminboard {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.navigation {
+  position: fixed;
+  /* position: absolute; */
+  /* margin: 0; */
+  /* margin: 0;
+  padding: 0; */
+  /* top: 70px; */
+  /* left: 0; */
+  width: 280px;
+  /* height: 100%; */
+  background: #6610f2;
+  transition: 0.5s;
+  overflow: hidden;
+  z-index: 1;
+  height: 400%;
+}
+.navigation:hover,
+.navigation.active {
+  width: 280px;
+}
+
+.navigation ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+.navigation ul li:hover {
+  background: #ea1d63;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.navigation ul li a .icon .fa {
+  font-size: 24px;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  min-width: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+/* .toggle {
+  position: absolute;
+  top: 9%;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #6610f2;
+  color: #6610f2;
+  cursor: pointer;
+} */
+
+/* 
+.toggle.active {
+  background: #ea1d63;
+}
+.toggle::before {
+  content: "\f0c9";
+  font-family: fontAwesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+} */
+/* .toggle.active:before {
+  content: "\f00d";
+} */
+
+@media (max-width: 767px) {
+  .navigation {
+    left: -40px;
+    width: 101px;
+    /* position: fixed; */
+    position: absolute;
+    /* margin: 0; */
+    /* margin: 0;
+    padding: 0; */
+    top: 70px;
+    height: 200%;
+    z-index: 1;
+  }
+  .navigation.active {
+    left: 0px;
+    width: 100%;
+  }
+
+  /* .logout {
+    flex-grow: 0;
+    flex-basis: 300px;
+  } */
+}
+.line {
+  background: #fff;
+}
+.admin-img {
+  width: 50%;
+  border-radius: 7px;
+}
+.container-Admin > div {
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  overflow: hidden;
+  height: 170px;
+  font-size: 2em;
+  white-space: nowrap;
+  color: #ffeead;
+  margin: 10px;
+}
+
+.container-Admin > div:nth-child(1) {
+  background: #6610f2;
+  position: relative;
+  left: 15%;
+}
+.container-Admin > div:nth-child(2) {
+  background: #6610f2;
+  position: relative;
+  left: 15%;
+}
+.container-Admin > div:nth-child(3) {
+  background: #6610f2;
+  position: relative;
+  left: 15%;
+}
+.container-Admin {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 17%;
+  margin-top: 3%;
+}
+
+span {
+  font-size: 30px;
+}
+.container-Admin span {
+  font-size: 20px;
+  position: relative;
+  bottom: 37px;
+}
+.good {
+  color: #6610f2;
+}
+.member-icon {
+  position: relative;
+  bottom: 33px;
+}
+.good {
+  /* justify-content: flex-end; */
+  color: wheat;
+  font-size: 20px;
+  width: 10px;
+  position: relative;
+  bottom: 20px;
+  right: 100px;
+}
+.member-Admin-num {
+  /* position: relative;
+  bottom: 50px;
+  left: 30px; */
+}
+.member-Admin-message {
+  font-size: 13px;
+}
+.update-profile {
+  margin-left: 80%;
+  width: 17%;
+}
+
+@media all and (max-width: 600px) {
+  .container-Admin {
+    flex-wrap: wrap;
+  }
+  .container-Admin > div {
+    flex: 1 1 50%;
+    /* width: 300px; */
+    padding: 30px;
+  }
+  /* .member-Admin-num {
+    position: relative;
+    bottom: 50px;
+    left: -7%;
+  } */
+}
+
+@media all and (max-width: 400px) {
+  .container-Admin > div {
+    flex: 1 1 100%;
+  }
+}
+
+.add-member-btn {
+  float: right;
+  background-color: #6610f2;
+  margin-right: 48px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  width: 13%;
+  font-size: 30%;
+  font-family: "Roboto";
+  border-radius: 6px;
+}
+.add-member-btns {
+  float: right;
+  background-color: #6610f2;
+  margin-right: 48px;
+  /* margin-top: 7px; */
+  cursor: pointer;
+  color: #fff;
+  width: 13.7%;
+  font-size: 30%;
+  font-family: "Roboto";
+  border-radius: 6px;
+}
+.list-members {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-top: 90px;
+}
+.august {
+  width: 27%;
+  overflow: hidden;
+  /* float: right; */
+  /* margin-left: 27%; */
+  border-radius: 10px;
+}
+/* .augusts {
+  width: 27%;
+  height: 70%;
+  border-radius: 10px;
+} */
+.member-august-img {
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  flex: 0 10 34rem; */
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; */
+  /* display: flex; */
+}
+.member-august-btns {
+  width: 30%;
+  /* height: 50px; */
+  margin-left: -70px;
+  background-color: #6610f2;
+  color: #fff;
+  margin-top: 48px;
+  /* padding: 17px; */
+  text-align: center;
+}
+.member-august-btn {
+  /* width: 39px; */
+  width: 30%;
+  /* height: 50px; */
+  margin-left: -70px;
+  background-color: #6610f2;
+  color: #fff;
+  margin-top: 48px;
+  /* padding: 17px; */
+  text-align: center;
+}
+.esther {
+  margin-left: 17px;
+}
+.member-head {
+  /* flex-wrap: wrap; */
+  display: flex;
+  margin-left: 22%;
+  flex-direction: row;
+}
+
+.addmember {
+  background: #2d6187;
+  min-height: 300vh;
+}
+.august-page-img {
+  margin-left: 38%;
+}
+.info-content {
+  text-align: center;
+}
+.admin-page-img {
+  margin-left: 27%;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+}
+.organisation-prrofile {
+  text-align: center;
+}
+.account {
+  background: #2d6187;
+  min-height: 300vh;
+}
+@media all and (max-width: 600px) {
+  /* .form-head {
+    margin-right: 90rem;
+  } */
+  .add-member-btn {
+    /* float: left; */
+    background-color: #3f51b5;
+    margin-right: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #fff;
+    width: 34%;
+    font-size: 30%;
+    font-family: "Roboto";
+    border-radius: 6px;
+  }
+  .august {
+    width: 58%;
+    /* overflow: hidden; */
+    /* float: right; */
+    overflow: hidden;
+    /* margin-left: 27%; */
+    border-radius: 10px;
+  }
+  .member-august-btn {
+    width: 19%;
+    height: 50px;
+    margin-left: -70px;
+    margin-top: 44px;
+    text-align: center;
+  }
+  .august-page-img {
+    margin-left: 11%;
+  }
+  .admin-page-img {
+    margin-left: 3%;
+    width: 90%;
+  }
+}
+.riche {
+  width: 100%;
+}
+.Password-page {
+  background: #2d6187;
+  min-height: 120vh;
+}
+.password-btn {
+  width: 40%;
+  font-size: 22px;
+  color: #fff;
+  margin-left: 130px;
+  position: relative;
+  background: #2d6187;
+  border-color: #2d6187;
+  top: 24px;
+  /* margin-top: 40px; */
+}
